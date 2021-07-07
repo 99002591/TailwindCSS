@@ -11,7 +11,7 @@
     <title>Apache RTR 200 4V</title>
 </head>
 <body>
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header id = "nav" class="sticky top-0 z-50 text-gray-400 bg-gray-700 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
@@ -20,10 +20,10 @@
             <span class="ml-3 text-xl">TVS</span>
           </a>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-white">Home</a>
-            <a class="mr-5 hover:text-white">Features</a>
-            <a class="mr-5 hover:text-white">Specifications</a>
-            <a class="mr-5 hover:text-white">Gallery</a>
+            <a href = "#home" class="mr-5 hover:text-white">Home</a>
+            <a href = "#features" class="mr-5 hover:text-white">Features</a>
+            <a href = "#specifications" class="mr-5 hover:text-white">Specifications</a>
+            <a href = "#gallery" class="mr-5 hover:text-white">Gallery</a>
           </nav>
           <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
             <a href="https://www.tvsmotor.com/book-online?105">Buy Now</a>
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section class="text-gray-600 body-font">
+    <section id = "home" class="text-gray-600 body-font">
         <div class="container mx-auto flex px-1 py-24 items-center justify-center flex-col">
           <img class="lg:w-3/6 md:w-5/6 w-5/6 mb-10 object-cover object-center rounded" alt="apache-rtr-200-black" src="./resources/images/apacheLandingImg.jpg">
             <div class="text-center lg:w-2/3 w-full">
@@ -46,7 +46,7 @@
 
     
 
-    <section class="text-gray-600 bg-gray-900 body-font">
+    <section id = "features" class="text-gray-600 bg-gray-900 body-font">
         <div class="container px-5 py-10 mx-auto">
           <div class="text-center mb-20">
             <h1 class="sm:text-4xl text-2xl font-medium title-font text-gray-100 mb-4">Features</h1>
@@ -102,7 +102,7 @@
         </div>
       </section>
 
-      <section class="text-gray-600 body-font">
+      <section id = "specifications" class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Specifications</h1>
@@ -273,16 +273,16 @@
       </section>
 
 
-      <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-4 py-24 mx-auto flex flex-wrap flex-col">
+      <section id = "gallery" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-1 py-20 mx-auto flex flex-wrap flex-col">
           <div class="flex mx-auto flex-wrap mb-20">
-            <a id = "glossBlack" onclick="changeColor(this.id)" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium bg-gray-800 inline-flex items-center leading-none border-indigo-500 text-white tracking-wider rounded-t">
+            <a id = "glossBlack" onclick="changeColor(this.id)" class="sm:px-3 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
               GLOSS BLACK
             </a>
-            <a id = "matteBlue" onclick="changeColor(this.id)" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
+            <a id = "matteBlue" onclick="changeColor(this.id)" class="sm:px-3 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
               MATTE BLUE
             </a>
-            <a id = "pearlWhite" onclick="changeColor(this.id)" class="sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
+            <a id = "pearlWhite" onclick="changeColor(this.id)" class="sm:px-3 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none border-gray-800 hover:text-white tracking-wider">
               PEARL WHITE
             </a>
           </div>
@@ -291,7 +291,7 @@
       </section>
 
 
-      <footer class="text-gray-600 body-font">
+      <footer id = "footer" class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
